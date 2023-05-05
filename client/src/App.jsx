@@ -9,7 +9,15 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
+<<<<<<< Updated upstream
       <Card></Card>
+=======
+      <Routes>
+        <Route path='/' element={<Outlet/>}></Route>
+        <Route path='/items' element={<ListProducts/>}></Route>
+        <Route path='/detail' element={<ProductDetail/>}></Route>
+      </Routes>
+>>>>>>> Stashed changes
     </div>
   )
 }

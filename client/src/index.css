@@ -2,6 +2,11 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --bg-yellow-meli: #FFE600;
   --bg-grey-search: #EEEEEE;
+<<<<<<< Updated upstream
+=======
+  --p-grey: #999999;
+  --b-blue: #3483FA;
+>>>>>>> Stashed changes
 }
 
 body{
@@ -39,6 +44,7 @@ body{
   border-radius: 2px;
 }
 
+<<<<<<< Updated upstream
 .nav-container_buttonSearch{
   background-color: var(--bg-grey-search);
   height: 30px;
@@ -68,5 +74,102 @@ body{
   height: 180px;
   padding: 16px;
   display: flex;
+=======
+.f-16{
+  font-size: 16px !important;
 }
 
+.f-28{
+  font-size: 28px !important;
+}
+
+.p-16{
+  padding: 16px;
+}
+
+.pt-16{
+  padding-top: 16px;
+}
+
+.pb-16{
+  padding-bottom: 16px;
+}
+
+.p-32{
+  padding: 32px;
+}
+
+.pr-32{
+  padding-right: 32px;
+}
+
+.pt-32{
+  padding-top: 32px;
+}
+
+.pb-32{
+  padding-bottom: 32px;
+}
+/***/
+.m-16{
+  margin: 16px;
+}
+
+.mt-16{
+  margin-top: 16px;
+}
+
+.mb-16{
+  margin-bottom: 16px;
+}
+
+.m-32{
+  margin: 32px;
+}
+
+.mt-32{
+  margin-top: 32px;
+}
+
+.mb-32{
+  margin-bottom: 32px;
+}
+
+.mr-32{
+  margin-right: 32px;
+}
+
+.separator{
+  border-color: 1px var(--p-grey);
+  size: 1px;
+  width: 90%;
+  margin: 0px auto;
+>>>>>>> Stashed changes
+}
+
+.btn{
+  background-color: var(--b-blue);
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.d-flex{
+  display: flex;
+}
+
+
+.price{
+  font-size: 46px;
+}
+
+.two-lines{
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+}
+
+.bold{
+  font-weight: bold;
+}
