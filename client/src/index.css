@@ -2,11 +2,8 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --bg-yellow-meli: #FFE600;
   --bg-grey-search: #EEEEEE;
-<<<<<<< Updated upstream
-=======
   --p-grey: #999999;
   --b-blue: #3483FA;
->>>>>>> Stashed changes
 }
 
 body{
@@ -44,7 +41,6 @@ body{
   border-radius: 2px;
 }
 
-<<<<<<< Updated upstream
 .nav-container_buttonSearch{
   background-color: var(--bg-grey-search);
   height: 30px;
@@ -74,7 +70,8 @@ body{
   height: 180px;
   padding: 16px;
   display: flex;
-=======
+}
+
 .f-16{
   font-size: 16px !important;
 }
@@ -144,7 +141,6 @@ body{
   size: 1px;
   width: 90%;
   margin: 0px auto;
->>>>>>> Stashed changes
 }
 
 .btn{

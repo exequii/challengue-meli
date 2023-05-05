@@ -2,11 +2,6 @@
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import App from './App'
-<<<<<<< Updated upstream
-
-export function render() {
-  const html = ReactDOMServer.renderToString(
-=======
 import { StaticRouter } from "react-router-dom/server";
 import { routes } from './routes/routes'
 
@@ -111,10 +106,10 @@ export function render() {
 }
 
 
->>>>>>> Stashed changes
     <React.StrictMode>
       <App />
     </React.StrictMode>
   )
   return { html }
 }
+*/
