@@ -2,6 +2,7 @@ let path = require("path");
 let fsp = require("fs/promises");
 let express = require("express");
 let { installGlobals } = require("@remix-run/node");
+let productRoutes = require("./server/routes/productRoutes");
 
 // Polyfill Web Fetch API
 installGlobals();
@@ -32,6 +33,8 @@ async function createServer() {
     app.use(require("compression")());
     app.use(express.static(resolve("dist/client")));
   }
+
+  app.use("/api/items", productRoutes);
 
   app.use("*", async (req, res) => {
     let url = req.originalUrl;
