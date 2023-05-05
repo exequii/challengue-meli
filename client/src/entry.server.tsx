@@ -1,22 +1,3 @@
-
-import React from 'react'
-import ReactDOMServer from 'react-dom/server'
-import App from './App'
-import { StaticRouter } from "react-router-dom/server";
-import { routes } from './routes/routes'
-
-export function render() {
-  const html = ReactDOMServer.renderToString(
-    <StaticRouter>
-      <App />
-    </StaticRouter>
-  )
-  return { html }
-}
-
-
-
-/*
 import type * as express from "express";
 import * as React from "react";
 import ReactDOMServer from "react-dom/server";
@@ -25,7 +6,8 @@ import {
   createStaticRouter,
   StaticRouterProvider,
 } from "react-router-dom/server";
-import { routes } from "./routes/routes";
+import { routes } from "./App";
+import './index.css'
 
 export async function render(request: express.Request) {
   let { query, dataRoutes } = createStaticHandler(routes);
@@ -49,7 +31,7 @@ export async function render(request: express.Request) {
 }
 
 export function createFetchRequest(req: express.Request): Request {
-  let origin = `${req.protocol}://localhost:5173`;
+  let origin = `${req.protocol}://${req.get("host")}`;
   // Note: This had to take originalUrl into account for presumably vite's proxying
   let url = new URL(req.originalUrl || req.url, origin);
 
@@ -82,34 +64,3 @@ export function createFetchRequest(req: express.Request): Request {
 
   return new Request(url.href, init);
 }
-*/
-
-
-
-
-
-
-/*
-import React from 'react'
-import ReactDOMServer from 'react-dom/server'
-import App from './App'
-import { StaticRouter } from "react-router-dom/server";
-import { routes } from './routes/routes'
-
-export function render() {
-  const html = ReactDOMServer.renderToString(
-    <StaticRouter>
-      <App />
-    </StaticRouter>
-  )
-  return { html }
-}
-
-
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  )
-  return { html }
-}
-*/

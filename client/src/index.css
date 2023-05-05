@@ -127,3 +127,130 @@ p{
 .span{
   color: var(--p-grey);
 }
+
+/**********************************************************************************************/
+
+.App{
+  background-color: var(--bg-grey-search);
+  min-height: 100vh;
+}
+
+/*********************************************************************************************/
+
+.nav-container{
+  background-color: var(--bg-yellow-meli);
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container_center{
+  width: 75%;
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container_logoMeli{
+  margin-right: 15px;
+}
+
+.nav-container_search{
+  width: 90%;
+  height: 20px;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.nav-container_buttonSearch{
+  background-color: var(--bg-grey-search);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width:400px){
+  .nav-container_center{
+    width: 90%;
+  }
+
+  .nav-container_search{
+    font-size: 12px;
+  }
+}
+
+
+
+/*********************************************************************************************/
+
+.card-container{
+  width: 100%;
+  height: 212px;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+
+.card-img{
+  height: 180px !important;
+  width: 180px !important;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+/**********************************************************************************************/
+
+.listProducts-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.listProducts-list{
+  width: 75%;
+  max-width: 960px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/**********************************************************************************************/
+
+.detail-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-product{
+  width: 75%;
+  max-width: 960px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.detail-img{
+  width: 680px;
+  height: 680px;
+  border: 1px solid black;
+  object-fit: contain;
+}
+
+/****************************************************************************************/
+
+.breadcrumb{
+  width: 75%;
+  max-width: 960px;
+  color: var(--p-grey);
+}

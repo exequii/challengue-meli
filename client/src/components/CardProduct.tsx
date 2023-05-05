@@ -16,7 +16,7 @@ export const CardProduct = (props) => {
                         <p className='title mb-32 mt-32'>$ 1980</p> 
                         <img src={logoShipping} alt="Logo Envios" height={20} width={20} style={{marginLeft: '12px'}}/>
                     </div>
-                    <Link to="/detail"><p className='subtitle'>Bla BlBla BlaBla BlaBla BlaBla BlaBla BlaBla Blaa</p></Link>
+                    <Link to="/detail/1"><p className='subtitle'>Bla BlBla BlaBla BlaBla BlaBla BlaBla BlaBla Blaa</p></Link>
                 </div>
                 <div>
                     <p className='span pt-32'>Capital Federal</p>

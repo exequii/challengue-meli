@@ -1,10 +1,10 @@
-import {useState, React} from 'react'
+import * as React from 'react';
 import { CardProduct } from '../components/CardProduct'
 import { BreadCrumb } from '../components/BreadCrumb'
 
 export const ListProducts = () => {
 
-    const [articles, setArticles] = useState([{},{},{},{}])
+    const [articles, setArticles] = React.useState([{},{},{},{}])
 
     return (
         <div className='listProducts-container'>
