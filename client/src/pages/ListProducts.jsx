@@ -1,15 +1,15 @@
 import {useState, React} from 'react'
 import { CardProduct } from '../components/CardProduct'
-
-
+import { BreadCrumb } from '../components/BreadCrumb'
 
 export const ListProducts = () => {
 
     const [articles, setArticles] = useState([{},{},{},{}])
 
     return (
-        <div style={{display:'flex', justifyContent:'center'}}>
-            <div style={{width: '75%', backgroundColor: 'white', margin:'10px', borderRadius: '5px'}}>
+        <div className='listProducts-container'>
+            <BreadCrumb></BreadCrumb>
+            <div className='listProducts-list'>
                 {
                     articles.map((article, index) => {
                     return <CardProduct key={index} {...article} index={index}></CardProduct>

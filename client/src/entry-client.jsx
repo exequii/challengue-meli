@@ -2,7 +2,10 @@ import './index.css'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { routes } from './routes/routes'
+
+let router = createBrowserRouter(routes);
 
 ReactDOM.hydrateRoot(
   document.getElementById('root'),
@@ -12,7 +15,15 @@ ReactDOM.hydrateRoot(
 )
 
 /*
-  <React.StrictMode>
+    <BrowserRouter>
+    <App />
+  </BrowserRouter>
+
+    <React.StrictMode>
     <App />
   </React.StrictMode>
+
+    <BrowserRouter>
+    <RouterProvider router={router} fallbackElement={null} />
+  </BrowserRouter>
 */

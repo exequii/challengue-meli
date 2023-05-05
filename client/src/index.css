@@ -3,77 +3,81 @@
   --bg-yellow-meli: #FFE600;
   --bg-grey-search: #EEEEEE;
   --p-grey: #999999;
+  --b-blue: #3483FA;
 }
 
 body{
   margin: 0 !important;
 }
 
-.title{
-  font-size: 24px !important;
-  margin: 24px 0px;
-}
-
-.subtitle{
-  font-size: 18px !important;
-}
-
-.span{
-  font-size: 12px;
-  color: var(--p-grey);
-}
+/*********************************************************************************************/
 
 p{
   font-size: 14px;
-  margin: 0px;
+}
+
+.f-16{
+  font-size: 16px !important;
+}
+
+.f-28{
+  font-size: 28px !important;
 }
 
 .p-16{
-  padding: 16px;
+  padding: 16px !important;
 }
 
 .pt-16{
-  padding-top: 16px;
+  padding-top: 16px !important;
 }
 
 .pb-16{
-  padding-bottom: 16px;
+  padding-bottom: 16px !important;
 }
 
 .p-32{
-  padding: 32px;
+  padding: 32px !important;
+}
+
+.pr-32{
+  padding-right: 32px !important;
 }
 
 .pt-32{
-  padding-top: 32px;
+  padding-top: 32px !important;
 }
 
 .pb-32{
-  padding-bottom: 32px;
+  padding-bottom: 32px !important;
 }
 /***/
 .m-16{
-  margin: 16px;
+  margin: 16px !important;
 }
 
 .mt-16{
-  margin-top: 16px;
+  margin-top: 16px !important;
 }
 
 .mb-16{
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
 }
 
 .m-32{
-  margin: 32px;
+  margin: 32px !important;
 }
 
 .mt-32{
-  margin-top: 32px;
+  margin-top: 32px !important;
 }
 
 .mb-32{
-  margin-bottom: 32px;
+  margin-bottom: 32px !important;
+}
+
+.mr-32{
+  margin-right: 32px !important;
 }
 
 .separator{
@@ -83,3 +87,43 @@ p{
   margin: 0px auto;
 }
 
+.btn{
+  background-color: var(--b-blue);
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.d-flex{
+  display: flex;
+}
+
+
+.price{
+  font-size: 46px;
+}
+
+.two-lines{
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.title{
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.subtitle{
+  font-size: 18px;
+  margin: 0;
+}
+
+.span{
+  color: var(--p-grey);
+}
