@@ -13,7 +13,7 @@ export const CardProduct = (props) => {
                 </div>
                 <div style={{width: '60%'}}>
                     <div style={{display: 'flex', alignItems: 'center'}}>
-                        <p className='title mb-32'>$ 1980</p> 
+                        <p className='title mb-32 mt-32'>$ 1980</p> 
                         <img src={logoShipping} alt="Logo Envios" height={20} width={20} style={{marginLeft: '12px'}}/>
                     </div>
                     <Link to="/detail"><p className='subtitle'>Bla BlBla BlaBla BlaBla BlaBla BlaBla BlaBla Blaa</p></Link>

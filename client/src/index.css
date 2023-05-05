@@ -10,66 +10,10 @@ body{
   margin: 0 !important;
 }
 
-
 /*********************************************************************************************/
 
-.nav-container{
-  background-color: var(--bg-yellow-meli);
-  width: 100%;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-}
-
-.nav-container_center{
-  width: 75%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-container_logoMeli{
-  margin-right: 15px;
-}
-
-.nav-container_search{
-  width: 80%;
-  height: 20px;
-  border: none;
-  padding: 5px;
+p{
   font-size: 14px;
-  border-radius: 2px;
-}
-
-.nav-container_buttonSearch{
-  background-color: var(--bg-grey-search);
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-@media (max-width:400px){
-  .nav-container_center{
-    width: 90%;
-  }
-
-  .nav-container_search{
-    font-size: 12px;
-  }
-}
-
-
-
-/*********************************************************************************************/
-
-.card-container{
-  width: 100%;
-  height: 180px;
-  padding: 16px;
-  display: flex;
 }
 
 .f-16{
@@ -81,59 +25,59 @@ body{
 }
 
 .p-16{
-  padding: 16px;
+  padding: 16px !important;
 }
 
 .pt-16{
-  padding-top: 16px;
+  padding-top: 16px !important;
 }
 
 .pb-16{
-  padding-bottom: 16px;
+  padding-bottom: 16px !important;
 }
 
 .p-32{
-  padding: 32px;
+  padding: 32px !important;
 }
 
 .pr-32{
-  padding-right: 32px;
+  padding-right: 32px !important;
 }
 
 .pt-32{
-  padding-top: 32px;
+  padding-top: 32px !important;
 }
 
 .pb-32{
-  padding-bottom: 32px;
+  padding-bottom: 32px !important;
 }
 /***/
 .m-16{
-  margin: 16px;
+  margin: 16px !important;
 }
 
 .mt-16{
-  margin-top: 16px;
+  margin-top: 16px !important;
 }
 
 .mb-16{
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
 }
 
 .m-32{
-  margin: 32px;
+  margin: 32px !important;
 }
 
 .mt-32{
-  margin-top: 32px;
+  margin-top: 32px !important;
 }
 
 .mb-32{
-  margin-bottom: 32px;
+  margin-bottom: 32px !important;
 }
 
 .mr-32{
-  margin-right: 32px;
+  margin-right: 32px !important;
 }
 
 .separator{
@@ -168,4 +112,18 @@ body{
 
 .bold{
   font-weight: bold;
+}
+
+.title{
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.subtitle{
+  font-size: 18px;
+  margin: 0;
+}
+
+.span{
+  color: var(--p-grey);
 }
