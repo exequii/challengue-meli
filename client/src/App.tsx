@@ -1,7 +1,7 @@
 import * as React from "react";
 import type { RouteObject } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-import { ListProducts } from "./pages/ListProducts";
+import { ListProducts, getServerSideProps } from "./pages/ListProducts";
 import { ProductDetail } from "./pages/ProductDetail";
 import { Navbar } from "./components/Navbar";
 
@@ -39,10 +39,11 @@ export const routes: RouteObject[] = [
 ];
 
 function Layout() {
+
     return (
         <div className="App">
-            <Navbar />
-            <Outlet />
+            <Navbar  />
+            <Outlet/>
         </div>
     );
 }
